@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#130d18" />
+  <meta name="description" content="FCC — Fallen Crown Collective, l'identité de ᴀᴋɪʀᴀ. Portfolio Garry's Mod : modération et mapping." />
+  <meta property="og:title" content="FCC — Fallen Crown Collective | ᴀᴋɪʀᴀ" />
+  <meta property="og:description" content="Portfolio Garry's Mod de ᴀᴋɪʀᴀ — Modération & Mapping." />
+  <title>FCC — Fallen Crown Collective | ᴀᴋɪʀᴀ</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="assets/media/poster.webp" as="image" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-progress" aria-hidden="true"><span></span></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="sakura-layer" aria-hidden="true" id="sakuraLayer"></div>
+
+  <div class="experience-gate" id="experienceGate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+    <div class="gate-card glass-panel">
+      <div class="gate-mark" aria-hidden="true">
+        <span class="gate-avatar"><img src="assets/media/akira-logo.webp" alt="" /></span>
+        <div class="gate-brand-stack"><strong>FCC</strong><small>by ᴀᴋɪʀᴀ</small></div>
+      </div>
+      <p class="eyebrow">FALLEN CROWN COLLECTIVE</p>
+      <h1 id="gateTitle">Bienvenue dans l'univers de <span>ᴀᴋɪʀᴀ</span></h1>
+      <p class="gate-copy">Une expérience visuelle inspirée du Japon, pensée autour de Garry's Mod, du mapping et de la modération.</p>
+      <div class="gate-actions">
+        <button class="btn btn-primary" id="enterWithMusic" type="button">
+          <span>Entrer avec la musique</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        </button>
+        <button class="btn btn-ghost" id="enterMuted" type="button">Entrer sans musique</button>
+      </div>
+      <p class="gate-note">Le son nécessite une interaction utilisateur sur les navigateurs modernes.</p>
+    </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#home" aria-label="FCC — Retour à l'accueil">
+      <span class="brand-symbol brand-avatar" aria-hidden="true"><img src="assets/media/akira-logo.webp" alt="" /></span>
+      <span class="brand-copy"><strong>FCC</strong><small>by ᴀᴋɪʀᴀ</small></span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Navigation principale">
+      <a href="#home" class="active">Accueil</a>
+      <a href="#identity">Identité</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#approach">Approche</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="quickMusicToggle" type="button" aria-label="Lire ou mettre en pause la musique" title="Musique">
+        <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h4v14H6zm8 0h4v14h-4z"/></svg>
+      </button>
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Ouvrir le menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav glass-panel" id="mobileNav" aria-label="Navigation mobile">
+    <a href="#home">Accueil</a>
+    <a href="#identity">Identité</a>
+    <a href="#expertise">Expertise</a>
+    <a href="#approach">Approche</a>
+  </nav>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="heroTitle">
+      <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/media/poster.webp" aria-hidden="true">
+        <source src="assets/media/fcc-background.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+
+      <div class="hero-content shell">
+        <div class="hero-main reveal">
+          <p class="eyebrow"><span></span> FALLEN CROWN COLLECTIVE</p>
+          <h1 id="heroTitle" class="display-title" data-text="FCC">FCC</h1>
+          <div class="hero-signature">
+            <span>by</span>
+            <strong>ᴀᴋɪʀᴀ</strong>
+            <em>アキラ</em>
+          </div>
+          <p class="hero-copy">Une identité personnelle construite autour de l'expérience Garry's Mod, entre maîtrise de la modération et création d'environnements.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#expertise">Découvrir mon profil</a>
+            <button class="btn btn-ghost music-open" type="button">Ouvrir la playlist</button>
+          </div>
+        </div>
+
+        <aside class="hero-status glass-panel reveal" aria-label="Résumé du profil">
+          <div class="status-head">
+            <span class="status-dot"></span>
+            <span>PROFILE // ACTIVE</span>
+          </div>
+          <div class="status-row">
+            <div><small>DOMAINE</small><strong>Garry's Mod</strong></div>
+            <span>01</span>
+          </div>
+          <div class="status-row">
+            <div><small>MODÉRATION</small><strong>Expérimenté</strong></div>
+            <span>02</span>
+          </div>
+          <div class="status-row">
+            <div><small>MAPPING</small><strong>Expérimenté</strong></div>
+            <span>03</span>
+          </div>
+          <div class="status-footer"><span>FCC / ᴀᴋɪʀᴀ</span><span>FR</span></div>
+        </aside>
+      </div>
+
+      <div class="scroll-cue" aria-hidden="true"><span></span><small>SCROLL</small></div>
+    </section>
+
+    <section class="section identity-section" id="identity" aria-labelledby="identityTitle">
+      <div class="shell section-grid">
+        <div class="section-kicker reveal">
+          <span>01</span>
+          <p>IDENTITÉ</p>
+        </div>
+        <div class="section-content">
+          <div class="section-heading reveal">
+            <p class="eyebrow">LA MARQUE DERRIÈRE LE PSEUDO</p>
+            <h2 id="identityTitle">Fallen Crown<br><span>Collective.</span></h2>
+          </div>
+
+          <div class="identity-layout">
+            <div class="identity-copy reveal">
+              <p class="lead">FCC est l'identité de <strong>ᴀᴋɪʀᴀ</strong> : une signature pensée pour présenter un profil expérimenté avec une direction visuelle nette, moderne et inspirée du Japon.</p>
+              <p>Le concept associe une esthétique manga élégante à une présentation sobre des compétences. L'objectif n'est pas d'en faire trop : chaque élément sert la lisibilité, l'identité et la crédibilité du profil.</p>
+            </div>
+
+            <div class="identity-mark reveal" aria-label="Logo officiel de ᴀᴋɪʀᴀ et signature FCC">
+              <div class="mark-ring">
+                <div class="mark-core"><img src="assets/media/akira-logo.webp" alt="Logo de ᴀᴋɪʀᴀ" /></div>
+                <strong>FCC</strong>
+                <small>FALLEN CROWN</small>
+              </div>
+              <div class="mark-labels"><span>OFFICIAL MARK // ᴀᴋɪʀᴀ</span><span>アキラ</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section expertise-section" id="expertise" aria-labelledby="expertiseTitle">
+      <div class="shell section-grid">
+        <div class="section-kicker reveal">
+          <span>02</span>
+          <p>EXPERTISE</p>
+        </div>
+        <div class="section-content">
+          <div class="section-heading reveal">
+            <p class="eyebrow">GARRY'S MOD</p>
+            <h2 id="expertiseTitle">Deux domaines.<br><span>Une même exigence.</span></h2>
+          </div>
+
+          <div class="expertise-cards">
+            <article class="expertise-card magnetic-card reveal">
+              <div class="card-sheen" aria-hidden="true"></div>
+              <div class="expertise-card__inner">
+                <div class="card-topline"><span>MOD / 01</span><span class="level">EXPÉRIMENTÉ</span></div>
+                <div class="card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 64 64"><path d="M32 5 52 13v15c0 13-8 24-20 31C20 52 12 41 12 28V13z"/><path d="m23 31 6 6 13-14"/></svg>
+                </div>
+                <h3>Modération<br>Garry's Mod</h3>
+                <p>Une présence orientée cadre, cohérence et gestion propre d'une communauté. Le niveau affiché reflète un profil qui ne se présente pas comme débutant.</p>
+                <ul class="tag-list" aria-label="Axes de modération">
+                  <li>Gestion</li><li>Règlement</li><li>Communication</li><li>Décision</li>
+                </ul>
+                <div class="card-number" aria-hidden="true">01</div>
+              </div>
+            </article>
+
+            <article class="expertise-card magnetic-card reveal">
+              <div class="card-sheen" aria-hidden="true"></div>
+              <div class="expertise-card__inner">
+                <div class="card-topline"><span>MAP / 02</span><span class="level">EXPÉRIMENTÉ</span></div>
+                <div class="card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 64 64"><path d="m9 18 15-8 16 8 15-8v36l-15 8-16-8-15 8z"/><path d="M24 10v36M40 18v36"/></svg>
+                </div>
+                <h3>Mapping<br>Garry's Mod</h3>
+                <p>Une approche centrée sur la construction d'espaces cohérents, la lisibilité du level design et une attention portée à la finition générale des environnements.</p>
+                <ul class="tag-list" aria-label="Axes de mapping">
+                  <li>Level Design</li><li>Optimisation</li><li>Ambiance</li><li>Itération</li>
+                </ul>
+                <div class="card-number" aria-hidden="true">02</div>
+              </div>
+            </article>
+          </div>
+
+          <p class="proof-note reveal"><span>NOTE</span> Les années d'expérience, serveurs, rôles et projets précis pourront être ajoutés uniquement avec des informations vérifiées fournies par ᴀᴋɪʀᴀ.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section approach-section" id="approach" aria-labelledby="approachTitle">
+      <div class="shell section-grid">
+        <div class="section-kicker reveal">
+          <span>03</span>
+          <p>APPROCHE</p>
+        </div>
+        <div class="section-content">
+          <div class="section-heading reveal">
+            <p class="eyebrow">SIGNATURE FCC</p>
+            <h2 id="approachTitle">Expérience avant<br><span>l'apparence.</span></h2>
+          </div>
+
+          <div class="principles">
+            <article class="principle reveal"><span>01</span><h3>Clarté</h3><p>Présenter l'essentiel sans faux chiffres, faux projets ou artifices inutiles.</p></article>
+            <article class="principle reveal"><span>02</span><h3>Maîtrise</h3><p>Mettre en avant un niveau expérimenté à travers une présentation structurée et assumée.</p></article>
+            <article class="principle reveal"><span>03</span><h3>Identité</h3><p>Faire de FCC et ᴀᴋɪʀᴀ une signature visuelle immédiatement reconnaissable.</p></article>
+          </div>
+
+          <div class="quote-block reveal">
+            <span class="quote-kana">アキラ</span>
+            <blockquote>« Fallen Crown Collective n'est pas un simple habillage. C'est la vitrine de l'expérience de ᴀᴋɪʀᴀ. »</blockquote>
+            <p>FCC — FALLEN CROWN COLLECTIVE</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div>
+        <p class="footer-brand">FCC</p>
+        <p>Fallen Crown Collective</p>
+      </div>
+      <div class="footer-signature"><span>CREATED FOR</span><strong>ᴀᴋɪʀᴀ</strong></div>
+      <div class="footer-meta"><span>GARRY'S MOD</span><span>MODERATION // MAPPING</span></div>
+    </div>
+  </footer>
+
+  <aside class="music-player glass-panel" id="musicPlayer" aria-label="Lecteur musical">
+    <button class="player-close" id="playerClose" type="button" aria-label="Fermer le lecteur">×</button>
+    <div class="track-art" aria-hidden="true">
+      <div class="vinyl"><img src="assets/media/akira-logo.webp" alt="" /><span>FCC</span></div>
+    </div>
+    <div class="track-info">
+      <small>NOW PLAYING // FCC PLAYLIST</small>
+      <strong id="trackTitle">Moonlit Sakura Trail</strong>
+      <span id="trackArtist">Kaazoom</span>
+    </div>
+    <div class="player-controls">
+      <button id="prevTrack" type="button" aria-label="Morceau précédent"><svg viewBox="0 0 24 24"><path d="M6 5h2v14H6zm3 7 9 7V5z"/></svg></button>
+      <button class="play-main" id="playPause" type="button" aria-label="Lire">
+        <svg class="icon-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        <svg class="icon-pause" viewBox="0 0 24 24"><path d="M6 5h4v14H6zm8 0h4v14h-4z"/></svg>
+      </button>
+      <button id="nextTrack" type="button" aria-label="Morceau suivant"><svg viewBox="0 0 24 24"><path d="M16 5h2v14h-2zM6 19l9-7-9-7z"/></svg></button>
+    </div>
+    <div class="progress-wrap">
+      <span id="currentTime">0:00</span>
+      <input id="trackProgress" type="range" min="0" max="100" value="0" step="0.1" aria-label="Progression du morceau" />
+      <span id="duration">0:00</span>
+    </div>
+    <div class="volume-wrap">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/></svg>
+      <input id="volume" type="range" min="0" max="1" value="0.68" step="0.01" aria-label="Volume" />
+      <button id="playlistToggle" type="button" aria-expanded="false">PLAYLIST 02</button>
+    </div>
+    <div class="playlist" id="playlist">
+      <button class="playlist-item active" data-track="0" type="button"><span>01</span><div><strong>Moonlit Sakura Trail</strong><small>Kaazoom</small></div></button>
+      <button class="playlist-item" data-track="1" type="button"><span>02</span><div><strong>Koto Japan Soundtrack</strong><small>Aikoto</small></div></button>
+    </div>
+  </aside>
+
+  <audio id="audio" preload="metadata"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
